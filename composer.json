@@ -1,0 +1,17 @@
+{
+    "name": "myomyintaung512/smspoh",
+    "description": "A PHP library for interacting with the SMSPoH RESTful SMS API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "myomyintaung512\\smspoh\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
