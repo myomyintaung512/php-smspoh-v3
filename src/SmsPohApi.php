@@ -50,6 +50,9 @@ class SmsPohApi
     public function sendSms($to, $message, $from, $options = [])
     {
         $endpoint = '/send';
+        // Convert + to %2B in phone numbers
+        $to = str_replace('+', '%2B', $to);
+
         $data = array_merge([
             'to' => $to,
             'message' => $message,
